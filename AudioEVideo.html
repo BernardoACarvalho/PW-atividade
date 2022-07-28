@@ -10,23 +10,54 @@
             <source src='27_audio.mp3' type='audio/mp3'>
             <source src='27_audio.ogg' type='audio/ogg'>
         </audio>
+    </p>
         <audio id='myaudio'>
             <source src='27_audio.m4a' type='audio/aac'>
             <source src='27_audio.mp3' type='audio/mp3'>
             <source src='27_audio.ogg' type='audio/ogg'>
         </audio>
+    </p>
 
-        <button onclick='playaudio()'>Play Audio</button>
-        <button onclick='pauseaudio()'>Pause Audio</button>
-        <script>
-            function playaudio()
-            {
-            O('myaudio').play()
-            }
-            function pauseaudio()
-            {
-            O('myaudio').pause()
-            }
-        </script>
+    <button onclick='playaudio()'>Play Audio</button>
+    <button onclick='pauseaudio()'>Pause Audio</button>
+    <script>
+        function playaudio()
+        {
+        O('myaudio').play()
+        }
+        function pauseaudio()
+        {
+        O('myaudio').pause()
+        }
+    </script>
+
+    </p>
+        <video width='560' height='320' controls>
+            <source src='movie.mp4' type='video/mp4'>
+            <source src='movie.webm' type='video/webm'>
+            <source src='movie.ogv' type='video/ogg'>
+        </video>
+
+    </p>
+
+        <video id='myvideo' width='560' height='320'>
+            <source src='movie.mp4' type='video/mp4'>
+            <source src='movie.webm' type='video/webm'>
+            <source src='movie.ogv' type='video/ogg'>
+            </video><br>
+    </p>
+       
+         <button onclick='playvideo()'>Play Video</button>
+         <button onclick='pausevideo()'>Pause Video</button>
+         <script>
+         function playvideo()
+         {
+         O('myvideo').play()
+         }
+         function pausevideo()
+         {
+         O('myvideo').pause()
+         }
+         </script>
     </body>
 </html
